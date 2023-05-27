@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var arr=[1,4,7,10,14,17,20,24,27,30], fiveMultiple=[]
+        console.log("Length of the array", arr.length)
+
+        /* Map */
+
+        var fiveMultiple=arr.map(function(pos){
+            return pos
+        })
+        console.log(fiveMultiple)
+
+        /* Filter */
+
+        var fiveMultiple = arr.filter(function(pos){
+            return pos>20
+        })
+        console.log(fiveMultiple)
+
+        /* Let and Constant */
+
+        let a1=57
+        console.log(a1)
+        a1="React js"
+        console.log(a1)
+
+        /* Spread */
+
+        var a=[1,2,3,4,5], b=["HTML","CSS","JS","React","MongoDB"], c=[6,7,8,9,10]
+        var d=[...a,...b,...c]
+        console.log(d)
+
+        /* Set Time out */
+        
+        setTimeout(()=>{
+            console.log("React js")
+        },5000)
+        console.log("Node js")
+        console.log("Mongo DB")
+
+        /* Set Time inteval */
+
+        setInterval(()=>{
+            console.log("React js")
+        },5000)
+        console.log("Node js")
+        console.log("Mongo DB")
+
+    </script>
+</body>
+</html>
